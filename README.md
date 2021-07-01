@@ -7,7 +7,7 @@ Team Info Builder
 
   The home for this project lives at the following link at GitHub https://github.com/Xtended99/TeamInfoBuilder   
 
-![AutoReadMe Intro Screen](./assets/images/.png)   
+![TeamInfoBuilder Intro Screen](./assets/images/instructionspng.PNG)   
    
 ![ Run_One MP4](./assets/videos/teaminfobuilder.mp4)   
    
