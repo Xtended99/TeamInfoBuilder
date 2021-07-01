@@ -21,7 +21,7 @@ async function redo ()
 
   let license = "";
 
-  process.stdout.write('\033c');
+  // process.stdout.write('\033c');
 
   console.log ( "\x1b[36m\x1b[1m" );
   console.log ( "\n   *****************************************************************************\n" );
@@ -208,7 +208,7 @@ async function repeat_me ()
   {
    for ( i = 0; i < 10; i++ )
       {
-       process.stdout.write('\033c');
+//       process.stdout.write('\033c');
        await inquirer.prompt(
           [
            {
@@ -284,10 +284,10 @@ async function build_html ()
            switch( answered.u_sers[ i ].e_mployee_type )
               {
                case "engineer":
-                 box_array = [ "            <div id=\"man\">\n", "              <h5>", "Manager = ", answered.m_anager, "<br>MGR EMP:", answered.m_emp, "<br>MGR Email:", answered.m_email, "<br>MGR Office:", answered.m_offn, "</h5>", "\n               <p class=\"info\">", "Emp Name:", answered.u_sers[ i ].n_ame, "</p>", "\n               <p class=\"info\">", "ID:", answered.u_sers[ i ].i_d, "</p>", "\n               <p class=\"info\">", "Emp:", answered.u_sers[ i ].e_m, "</p>", "\n               <p class=\"info\">", "Office:", answered.u_sers[ i ].o_n, "   </p>","\n               <p class=\"info\">", "Emp Type:", answered.u_sers[ i ].e_mployee_type, "</p>","\n               <p class=\"info\">", "Git TAG:", answered.u_sers[ i ].g_ithub, "</p>", "\n            </div>\n\n" ]
+                 box_array = [ "            <div id=\"man\">\n", "              <h4>", "Manager = ", answered.m_anager, "<br>MGR EMP:", answered.m_emp, "<br>MGR Email:", answered.m_email, "<br>MGR Office:", answered.m_offn, "</h4>", "\n               <p class=\"info\">", "Emp Name:", answered.u_sers[ i ].n_ame, "</p>", "\n               <p class=\"info\">", "ID:", answered.u_sers[ i ].i_d, "</p>", "\n               <p class=\"info\">", "Emp:", answered.u_sers[ i ].e_m, "</p>", "\n               <p class=\"info\">", "Office:", answered.u_sers[ i ].o_n, "   </p>","\n               <p class=\"info\">", "Emp Type:", answered.u_sers[ i ].e_mployee_type, "</p>","\n               <p class=\"info\">", "Git TAG:", answered.u_sers[ i ].g_ithub, "</p>", "\n            </div>\n\n" ]
                 break;
                case "intern":
-                 box_array = [ "            <div id=\"man\">\n", "              <h5>", "Manager = ", answered.m_anager, "<br>MGR EMP:", answered.m_emp, "<br>MGR Email:", answered.m_email, "<br>MGR Office:", answered.m_offn, "</h5>", "\n               <p class=\"info\">", "Emp Name:", answered.u_sers[ i ].n_ame, "</p>", "\n               <p class=\"info\">", "ID:", answered.u_sers[ i ].i_d, "</p>", "\n               <p class=\"info\">", "Emp:", answered.u_sers[ i ].e_m, "</p>", "\n               <p class=\"info\">", "Office:", answered.u_sers[ i ].o_n, "   </p>","\n               <p class=\"info\">", "Emp Type:", answered.u_sers[ i ].e_mployee_type, "</p>","\n               <p class=\"info\">", "School:", answered.u_sers[ i ].i_ntern, "</p>", "\n            </div>\n\n" ]
+                 box_array = [ "            <div id=\"man\">\n", "              <h4>", "Manager = ", answered.m_anager, "<br>MGR EMP:", answered.m_emp, "<br>MGR Email:", answered.m_email, "<br>MGR Office:", answered.m_offn, "</h4>", "\n               <p class=\"info\">", "Emp Name:", answered.u_sers[ i ].n_ame, "</p>", "\n               <p class=\"info\">", "ID:", answered.u_sers[ i ].i_d, "</p>", "\n               <p class=\"info\">", "Emp:", answered.u_sers[ i ].e_m, "</p>", "\n               <p class=\"info\">", "Office:", answered.u_sers[ i ].o_n, "   </p>","\n               <p class=\"info\">", "Emp Type:", answered.u_sers[ i ].e_mployee_type, "</p>","\n               <p class=\"info\">", "School:", answered.u_sers[ i ].i_ntern, "</p>", "\n            </div>\n\n" ]
                 break;
                default:
               }
