@@ -1,0 +1,71 @@
+html
+  {
+   box-sizing: border-box;
+  }
+
+*, *:before, *:after 
+  {
+   box-sizing: inherit;
+  }
+
+body
+  {
+   font-family: Georgia, serif;
+   line-height: 1.5em;
+  }
+
+h1
+  {
+   font-size: 4em;
+   font-weight: normal;
+  }
+
+h2
+  {
+   font-size: 1.2em;
+   margin-top: 0;
+  }
+
+#big_box
+  {
+   border: 3px solid white;
+   display: flex;
+   align-items: stretch;
+   flex-flow: row wrap;
+   justify-content: center;
+  }
+
+div:not(#big_box)
+  {
+   background: white;
+   border: 3px solid blue;
+   margin: 10px;
+   padding: 20px;
+   width: 240px;
+   display: flex;
+   flex-direction: column;
+  }
+
+div#big_box div.title
+  {
+   background-color: blue;
+   color: #F9AB33;
+   line-height: 4em;
+  }
+
+#man
+  {
+   background: green;
+   border: 3px solid blue;
+  }
+
+#office_number
+  {
+   font-weight: bold;
+   background: #F9AB33;
+   padding: 5px;
+   width: 100%;
+   text-align: center;
+   margin-top: auto;
+  }
+
