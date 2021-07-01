@@ -21,7 +21,7 @@ async function redo ()
 
   let license = "";
 
-  // process.stdout.write('\033c');
+  process.stdout.write('\033c');
 
   console.log ( "\x1b[36m\x1b[1m" );
   console.log ( "\n   *****************************************************************************\n" );
@@ -208,7 +208,7 @@ async function repeat_me ()
   {
    for ( i = 0; i < 10; i++ )
       {
-//       process.stdout.write('\033c');
+       process.stdout.write('\033c');
        await inquirer.prompt(
           [
            {
