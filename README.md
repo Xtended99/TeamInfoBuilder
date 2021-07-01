@@ -3,11 +3,11 @@
 Team Info Builder 
 
 
-  Please use the following link to see published version of this repository https://xtended99.github.io/AutoReadMe/  
+  Please use the following link to see published version of this repository https://xtended99.github.io/TeamInfoBuilder/  
 
-  The home for this project lives at the following link at GitHub https://github.com/Xtended99/AutoReadMe  
+  The home for this project lives at the following link at GitHub https://github.com/Xtended99/TeamInfoBuilder   
 
-![AutoReadMe Intro Screen](./assets/images/introscreen.png)   
+![AutoReadMe Intro Screen](./assets/images/.png)   
    
 ![AutoreadMe MP4](./assets/videos/Jun_19_2021_11_26_PM.mp4)   
    
