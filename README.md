@@ -90,11 +90,11 @@ its functionality and all of the tests passing. You’ll need to submit a link t
   
 ![Detailed Instructions Prompt](./assets/images/instructionspng.PNG)   
   
-### Detailed Instructions Prompt:  
+### User Details:  
   
 ![Filling in manager and Employee details](./assets/images/addingmgremp.png)   
 
 
 ### Sample index.html:  
 
-[Sample Readme](./index.html)
+[Sample Index.html](./index.html)
