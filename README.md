@@ -95,6 +95,6 @@ its functionality and all of the tests passing. You’ll need to submit a link t
 ![Filling in manager and Employee details](./assets/images/addingmgremp.png)   
 
 
-### Sample Readme.md
+### Sample index.html:  
 
-[Sample Readme](./sample_readme.md)
+[Sample Readme](./index.html)
