@@ -1,0 +1,24 @@
+{
+  "name": "teaminfo",
+  "version": "1.0.4",
+  "description": "TeamInfo",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {
+    "inquirer": "^8.1.1",
+    "jest": "^27.0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest ./test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "TeamInfo"
+  },
+  "author": "Angel Sosa",
+  "license": "ISC"
+}
