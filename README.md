@@ -35,7 +35,7 @@ Team Info Builder
   
     ? Would you like to run this again? (Y/n)  
   
-![After the last employee question](.assets/images/end_of_run.png)   
+![After the last employee question](./assets/images/end_of_run.png)   
   
     Please select NO or it will ovewrite your previous ansers.   
     To see the compiled HTML please point your browser to the dist directory   
@@ -44,8 +44,6 @@ Team Info Builder
    In order to test you must run the tool once.   
    The test commands are   
          npm run test   
-  
-  
   
 ![TeamInfoBuilder Intro Screen](./assets/images/instructionspng.PNG)   
    
