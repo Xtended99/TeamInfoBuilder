@@ -17,27 +17,31 @@ Team Info Builder
   
   To install from github all you have to do is the following   
   
-    git clone git@github.com:Xtended99/TeamInfoBuilder.git
-    npm install inquirer util fs fs-extra inquirer-loop
+    git clone git@github.com:Xtended99/TeamInfoBuilder.git   
+    npm install inquirer util fs fs-extra inquirer-loop   
   
-  To run the utility
-
-    Create a .js file with the following contents only 
+  To run the utility   
+  
+    Create a .js file with the following contents only   
     require( 'teaminfo' );   
-  
+
     node The_Name_Of_Your_JS_File.js   
   
     From there just follow the prompts.   
   
   ## Please Read this carefully. A very important note:   
   
-    After you have entered one or many employees, After the last employtee you will be asked 
+    After you have entered one or many employees, After the last employtee you will be asked   
   
-    ? Would you like to run this again? (Y/n)
+    ? Would you like to run this again? (Y/n)  
   
     Please select NO or it will ovewrite your previous ansers.   
     To see the compiled HTML please point your browser to the dist directory   
-    and pick the index.html
+    and pick the index.html   
+  
+   In order to test you must run the tool once.   
+   The test commands are   
+         npm run test   
   
   
 ![TeamInfoBuilder Intro Screen](./assets/images/instructionspng.PNG)   
@@ -48,6 +52,9 @@ Team Info Builder
   There is a video link above and below for show and tell
      
 ![Run_Two MP4](./assets/videos/TeamInfo_Tool_Browser.mp4)   
+
+  This is the video
+![Run_Two MP4](./assets/videos/team_info_builder_test.mp4)   
   
 ### Given:
   
