@@ -3,14 +3,15 @@
 inquirer = require( "inquirer" )
 const { promisify } = require("util");
 fs = require( "fs" )
+fs_extra = require( "fs-extra" )
 
 inquirer.registerPrompt("loop", require("inquirer-loop")(inquirer));
 const promisedWriteFile = promisify(fs.writeFile);
 
-Employee = require( "./Employee" );
-Manager  = require( "./Manager" );
-Engineer = require( "./Engineer" );
-Intern   = require( "./Intern" );
+Employee = require( "./lib/Employee" );
+Manager  = require( "./lib/Manager" );
+Engineer = require( "./lib/Engineer" );
+Intern   = require( "./lib/Intern" );
 
 let first_time_message = "\n\n\n\tHello you are about to build a team of developers with TeamBuilder.\n\tTo move forward simply press return to exit type \"n\" to exit";
 answered = ""
@@ -252,20 +253,43 @@ async function build_html ()
        {
         console.log( a[ i ] )
        }
+
+    try 
+       {
+        if (fs.existsSync("./directory-name"))
+          {
+           console.log("You have run this before")
+          }
+         else
+          {
+           process.stdout.write('\033c');
+           console.log("Initializing directories")
+
+           fs_extra.copySync( "./node_modules/teaminfo/assets", "assets" )
+           fs_extra.copySync( "./node_modules/teaminfo/dist", "dist" )
+           fs_extra.copySync( "./node_modules/teaminfo/lib", "lib" )
+           fs_extra.copySync( "./node_modules/teaminfo/src", "src" )
+           fs_extra.copySync( "./node_modules/teaminfo/test", "test" )
+          }
+       }
+     catch(e)
+       {
+        console.log("Please reinstall TeamInfo")
+       }
+
+    fd_1  = fs.openSync( './src/first_half.html', "as+", 0o666 )
+    fd_2  = fs.openSync( './src/last_half.html', "as+", 0o666 )
+    fd_3  = fs.openSync( './dist/index.html', "w", 0o666 )
     
-    fd_1  = fs.openSync( 'first_half.html', "as+", 0o666 )
-    fd_2  = fs.openSync( 'last_half.html', "as+", 0o666 )
-    fd_3  = fs.openSync( 'index.html', "as+", 0o666 )
+    console.log( fs.statSync( './src/first_half.html' ).size )
+    console.log( fs.statSync( './src/last_half.html' ).size )
     
-    console.log( fs.statSync( 'first_half.html' ).size )
-    console.log( fs.statSync( 'last_half.html' ).size )
-    
-    buffer_1 = Buffer.alloc( fs.statSync( 'first_half.html' ).size );
-    buffer_2 = Buffer.alloc( fs.statSync( 'last_half.html' ).size );
+    buffer_1 = Buffer.alloc( fs.statSync( './src/first_half.html' ).size );
+    buffer_2 = Buffer.alloc( fs.statSync( './src/last_half.html' ).size );
     buffer_3 = Buffer.alloc( JSON.stringify( answered ).length, 'utf8' )
     
-    fs.readSync( fd_1, buffer_1, 0, ( fs.statSync( 'first_half.html' ).size ), 0 )
-    fs.readSync( fd_2, buffer_2, 0, ( fs.statSync( 'last_half.html' ).size ), 0 )
+    fs.readSync( fd_1, buffer_1, 0, ( fs.statSync( './src/first_half.html' ).size ), 0 )
+    fs.readSync( fd_2, buffer_2, 0, ( fs.statSync( './src/last_half.html' ).size ), 0 )
     buffer_3 = Buffer.from( JSON.stringify( answered ) )
 
     // box_array = [ "            <div>\n", "              <h2>", "Manager", answered.m_anager, "</h2>", "\n               <p class=\"info\">", answered.u_sers[0].n_ame, "</p>","\n               <p class=\"info\">", answered.u_sers[0].e_m, "</p>", "\n               <p class=\"info\">", answered.u_sers[0].o_n, "   </p>","\n               <p class=\"info\">", answered.u_sers[0].e_mployee_type, "</p>","\n               <p class=\"info\">", "Blank 2", "</p>", "\n            </div>\n\n" ]
@@ -297,11 +321,11 @@ async function build_html ()
           }
 
     fs.appendFileSync( fd_3, buffer_2, )
-    
-    console.log( fs.statSync( 'first_half.html' ).size )
-    console.log( fs.statSync( 'last_half.html' ).size )
+
+    console.log( fs.statSync( './src/first_half.html' ).size )
+    console.log( fs.statSync( './src/last_half.html' ).size )
     console.log( JSON.stringify( answered ).length )
-    
+
     fs.closeSync( fd_1 )
     fs.closeSync( fd_2 )
     fs.closeSync( fd_3 )
