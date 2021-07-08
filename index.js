@@ -265,6 +265,7 @@ async function build_html ()
            process.stdout.write('\033c');
            console.log("Initializing directories")
 
+           fs_extra.copySync( "./node_modules/teaminfo/package.json", "package.json" )
            fs_extra.copySync( "./node_modules/teaminfo/assets", "assets" )
            fs_extra.copySync( "./node_modules/teaminfo/dist", "dist" )
            fs_extra.copySync( "./node_modules/teaminfo/lib", "lib" )
