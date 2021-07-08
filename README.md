@@ -37,7 +37,7 @@ Team Info Builder
   
 ![After the last employee question](./assets/images/end_of_run.png)   
   
-    Please select NO or it will ovewrite your previous ansers.   
+    Please select NO or it will ovewrite your previous answers.   
     To see the compiled HTML please point your browser to the dist directory   
     and pick the index.html   
   
