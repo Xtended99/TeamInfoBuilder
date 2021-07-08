@@ -18,6 +18,7 @@ Team Info Builder
   To install from github all you have to do is the following   
   
     git clone git@github.com:Xtended99/TeamInfoBuilder.git
+    npm install inquirer util fs fs-extra inquirer-loop
   
   To run the utility
 
