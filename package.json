@@ -1,6 +1,6 @@
 {
   "name": "teaminfo",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "TeamInfo",
   "main": "index.js",
   "directories": {
@@ -8,7 +8,9 @@
     "test": "test"
   },
   "dependencies": {
+    "fs-extra": "^10.0.0",
     "inquirer": "^8.1.1",
+    "inquirer-loop": "^0.3.0",
     "jest": "^27.0.6"
   },
   "devDependencies": {},
