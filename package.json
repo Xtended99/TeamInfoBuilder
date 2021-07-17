@@ -1,26 +1,33 @@
 {
-  "name": "teaminfo",
+  "name": "teaminfobuilder",
   "version": "1.0.5",
-  "description": "TeamInfo",
+  "description": "Team Info Builder",
   "main": "index.js",
   "directories": {
     "lib": "lib",
     "test": "test"
   },
   "dependencies": {
+    "fs": "0.0.1-security",
     "fs-extra": "^10.0.0",
-    "inquirer": "^8.1.1",
+    "inquirer": "^8.1.2",
     "inquirer-loop": "^0.3.0",
-    "jest": "^27.0.6"
+    "jest": "^27.0.6",
+    "util": "^0.12.4"
   },
   "devDependencies": {},
   "scripts": {
+    "start": "node index.js",
     "test": "jest ./test/"
   },
   "repository": {
     "type": "git",
-    "url": "TeamInfo"
+    "url": "git+https://github.com/Xtended99/TeamInfoBuilder.git"
   },
-  "author": "Angel  Sosa",
-  "license": "ISC"
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xtended99/TeamInfoBuilder/issues"
+  },
+  "homepage": "https://github.com/Xtended99/TeamInfoBuilder#readme"
 }
