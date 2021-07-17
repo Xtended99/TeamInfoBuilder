@@ -30,7 +30,7 @@ Team Info Builder
     information again   
   
     2. There is an issue when you run "npm start" as opposed to "node index.js"
-       The tool will break at the end when you run "npm start".
+       The tool will break at the end when you run "npm start". Please run "node index.js"
   
 ![After the last employee question](./assets/images/end_of_run.png)   
   
