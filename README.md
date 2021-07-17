@@ -27,14 +27,15 @@ Team Info Builder
        If you say "Y" at both prompts you will overwright your data and you will need to enter your 
     information again   
   
-    2. There is an issue when you run "npm start" as opposed to "node index.js"
-       The tool will break at the end when you run "npm start". Please run "node index.js"
-  
 ![After the last employee question](./assets/images/end_of_run.png)   
   
     Please select NO or it will ovewrite your previous answers.   
     To see the compiled HTML please point your browser to the dist directory   
     and pick the index.html   
+  
+    2. There is an issue when you run "npm start" as opposed to "node index.js"
+       The tool will break at the end when you run "npm start". Please run "node index.js"
+  
   
    In order to test you must run the tool once.   
    The test commands are   
