@@ -28,6 +28,7 @@ Team Info Builder
     ? Would you like to run this again? (Y/n)
     If you say "Y" at both promp[ts you will overwright your data and you will need to enter your 
     information again   
+  
     There is an issue when you run "npm start" as opposed to "node index.js"
     The tool will break at the end when you run "npm start".
   
