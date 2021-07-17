@@ -26,6 +26,8 @@ Team Info Builder
     After you have entered one or many employees, After the last employtee you will be asked   
   
     ? Would you like to run this again? (Y/n)  
+    There is an issue when you run "npm start" as opposed to "node index.js"
+    The tool will break at the end when you run "npm start".
   
 ![After the last employee question](./assets/images/end_of_run.png)   
   
