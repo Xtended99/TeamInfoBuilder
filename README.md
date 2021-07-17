@@ -7,8 +7,6 @@ Team Info Builder
   
   The home for this project lives at the following link at GitHub https://github.com/Xtended99/TeamInfoBuilder   
   
-  Please use the following link for the official and supported download at NPM  https://www.npmjs.com/package/teaminfo?__cf_chl_captcha_tk__=3646a1a82d1ea316bdad67f69a8e0eaa721b3365-1625594987-0-AVGJ_MmHPJj8zCIZyNmXSMORDWBLHCCge0M5hNoz154JHyGF2P-1gqnvepDQuTi_NekJyA4PKHYeXKu0Fo6dzL4835dyPrQqNxwk9_2G9IeW4WmA7K4Ib4LSjO-Wvfc7ZeL8wfujj5yrJFAfc6yPqFCyL9KeSszv4J2Uxctwk4pJbUVlwxprHX7TXp8CrLWGTHmQwpVcNG4Lg873uJHLs89A-F8rKN-OH03lPzRUm2u4xsnajb5QPtoelSWWYZ5fkFo7qadY1eH79TAZT3Dz5vUfOKw8t5cuu2IbeYV1z_pIfQm9l4TUtCrzYr2OkjAX8qjjVodR_G4Jb0PUfB6sB7zEwCHKM8yiVvB5pViRJL5zq-x18mI0RTYEkSB6AAzKp39rMoVKAl4AGXOlNASnEHFKLvA5zgt9SZyKx4P4lEX1w3ylkqGBTp1n2SMJZW3gQYQq9LRKG-iJQgQ6096nMDlZfzjz37hpu5TCIupzIEAaOMCTk2qkWDN-ec1FnNMj5CSH9g29gu3NdZ1ghrNyICPctPhZf2BvKP25ZS6y1TaYn1r2qleluEJ1aRv1BtxCjruFbMxchxCtmsQysKITI9_hD4T0eYbOLmPd8FT6ImHbK9Uyg1b8IJ4wYhpE0T5y0y9w-m5ndvbIJ-vd9jKi0zLaM5FqEvEpyE_YaY3c7hlh   
-  
   To install from github all you have to do is the following   
   
     git clone git@github.com:Xtended99/TeamInfoBuilder.git   
