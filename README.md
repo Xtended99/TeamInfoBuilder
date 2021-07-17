@@ -25,7 +25,9 @@ Team Info Builder
   
     After you have entered one or many employees, After the last employtee you will be asked   
   
-    ? Would you like to run this again? (Y/n)  
+    ? Would you like to run this again? (Y/n)
+    If you say "Y" at both promp[ts you will overwright your data and you will need to enter your 
+    information again   
     There is an issue when you run "npm start" as opposed to "node index.js"
     The tool will break at the end when you run "npm start".
   
