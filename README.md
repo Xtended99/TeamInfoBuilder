@@ -12,11 +12,13 @@ Team Info Builder
   To install from github all you have to do is the following   
   
     git clone git@github.com:Xtended99/TeamInfoBuilder.git   
-    npm install
+    cd TeamInfoBuilder   
+    npm install   
   
   To run the utility   
-    node index.js   
 
+    node index.js   
+  
     From there just follow the prompts.   
   
   ## Please Read this carefully!!! A very important note:   
